@@ -10,10 +10,11 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 fixed-top">
       <div class="container-fluid">
         <button
           class="navbar-toggler"
@@ -28,34 +29,32 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Speakers</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Schedule</a></li>
           </ul>
           <span class="text-white">
-            Powered By <a href="#" class="text-warning bg-dark">PARAGRAPH</a>
+            Powered By <a href="#" class="link-warning link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">PARAGRAPH</a>
           </span>
         </div>
       </div>
     </nav>
 
-    <header class="header bg-warning text-center py-5">
-      <h1>Full Stack Conf</h1>
-      <p>A One-Day Conference About All Things Javascript</p>
-      <div class="btn-group" role="group">
-        <button type="button" class="btn text-white bg-secondary">
-          Register Now
-        </button>
-        <button type="button" class="btn text-white bg-dark">
-          See Speakers
-        </button>
-      </div>
+    <header class="header bg-warning text-center py-5 mt-5">
+        <h1>Full Stack Conf</h1>
+        <p>A One-Day Conference About All Things Javascript</p>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn text-white bg-secondary">
+            Register Now
+          </button>
+          <button type="button" class="btn text-white bg-dark">
+            See Speakers
+          </button>
+        </div>
     </header>
 
-    <main class="bg-white">
+    <main class="bg-white container mt-6">
       <div class="container">
         <div class="row justify-content-center py-5">
           <div class="col-md-4 mb-4">
@@ -75,7 +74,7 @@
           </div>
           <div class="col-md-4 mb-4">
             <h5 class="fs-3">About Full Stack Conf</h5>
-            <img src="..." alt="Conference Image" class="img-fluid mb-2" />
+            <img src="images/city.png" alt="city image" class="img-fluid mb-4" />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
               dolore!
@@ -279,7 +278,7 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <form>
-                <div class="modal-header">
+                <div class="modal-header bg-warning">
                   <h5 class="modal-title" id="registerModalLabel">
                     Register for Conference
                   </h5>
@@ -326,9 +325,9 @@
                   <div class="mb-3">
                     <label for="ticketType" class="form-label">Job Role:</label>
                     <select class="form-select" id="ticketType">
-                      <option>General</option>
-                      <option>VIP</option>
-                      <option>Student</option>
+                      <option>Full Stack JS Developer</option>
+                      <option>Frontend Developer</option>
+                      <option>Backend Developer</option>
                     </select>
                   </div>
                   <strong>Which Topics Interest You Most?</strong>
@@ -406,7 +405,7 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="submit" class="btn btn-dark">Register</button>
+                  <button type="submit" class="btn btn-secondary">Register</button>
                 </div>
               </form>
             </div>
@@ -422,10 +421,12 @@
           </p>
         </div>
         <div class="col-md-4 mb-4">
-          <p class="text-secondary">Stay up to date on Paragraph Conference</p>
-          <input type="text" class="form-control" id="inputZip">
-          <button type="submit" class="btn btn-dark">Sign up</button>
-        </div>
+            <p class="text-secondary">Stay up to date on Paragraph Conference</p>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Your email" id="inputZip">
+              <button type="submit" class="btn btn-secondary">Sign up</button>
+            </div>
+          </div>
 
         <hr>
     </div>
